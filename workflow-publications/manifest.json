@@ -1,0 +1,16 @@
+{
+  "source_commit": "f62c55b255f1b42df02c557466ad055470b29740",
+  "source_run": "https://github.com/newdarwindev/microfreelance/actions/runs/41273837420",
+  "documents": [
+    {
+      "file": "whitepaper.pdf",
+      "bytes": 445951,
+      "sha256": "222a927d079e72d805b8471ea175977a8bc904b4a70bfec36624615097f5fb9c"
+    },
+    {
+      "file": "deck.pdf",
+      "bytes": 446933,
+      "sha256": "da323658a2190d8dcb3a82eb410ed5506f3092cf1f82bea546f80bf1eb9b7b16"
+    }
+  ]
+}
