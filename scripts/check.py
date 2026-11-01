@@ -13,6 +13,9 @@ for stem in ("whitepaper", "presentation"):
     if not pdf.startswith(b"%PDF-") or b"%%EOF" not in pdf[-1024:]:
         raise SystemExit(f"Invalid PDF: {stem}")
 expected = {"index.html", "whitepaper.pdf", "presentation.pdf", "manifest.json", ".nojekyll"}
+if (ROOT / "dist/workflows").exists():
+    expected.add("workflows")
+    assert {p.name for p in (ROOT / "dist/workflows").iterdir()} == {"index.html", "whitepaper.pdf", "deck.pdf", "manifest.json"}
 assert {f.name for f in (ROOT / "dist").iterdir()} == expected, "Unexpected public output"
 page = (ROOT / "dist/index.html").read_text()
 assert "{{" not in page, "Unexpanded site placeholder"

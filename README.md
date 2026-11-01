@@ -34,3 +34,14 @@ The workflow pins actions and the TeX image. Updating pins requires a clean buil
 The supplied grounding source is [ColabContent's hiring-budget article](https://colabcontent.com/hire/how-much-to-budget-for-an-ai-hire/), accessed 1 November 2026. The documents use limited attributed context and original platform analysis; no source article or dataset is republished. The article's displayed engineer range, midpoint and all-in calculation are inconsistent, so the reported all-in total is not reused.
 
 Project budgets are illustrative assumptions. The example 10% fee does not change the application's fee policy. No customer traction, market sizing, funding ask or commercial performance is asserted. Recheck current facts before publishing a later edition.
+
+## Viewable workflow publications
+
+The private application's successful main-branch CI automatically exports only its two generated PDFs
+and a checksum/provenance manifest into `workflow-publications/`. This repository validates that strict
+allowlist and deploys the PDFs to `/microfreelance-docs/workflows/` through its normal Pages workflow.
+Test logs, videos, application data, raw evidence manifests and screenshots are not copied as separate
+files. The PDFs contain selected synthetic screenshots. The original product proposal remains at the
+site root. The application uses a deploy key scoped to this public repository; no private-repository
+credential is stored here. Edit the workflow publications in the application repository; CI owns the
+snapshot directory.
