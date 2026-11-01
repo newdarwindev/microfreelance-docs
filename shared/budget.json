@@ -1,0 +1,16 @@
+{
+  "label": "Illustrative project assumptions; not a quote or validated market rate",
+  "currency": "USD",
+  "human_work": [
+    {"role": "Lead operator and project coordination", "hours": 12, "rate": 40},
+    {"role": "Integration specialist", "hours": 16, "rate": 60},
+    {"role": "Knowledge and content specialist", "hours": 8, "rate": 35},
+    {"role": "Independent acceptance reviewer", "hours": 4, "rate": 50}
+  ],
+  "api_allowance": 120,
+  "platform_fee_percent": 10,
+  "contingency": 200,
+  "monthly_operator_hours": 6,
+  "monthly_operator_rate": 40,
+  "monthly_api_allowance": 80
+}

@@ -1,0 +1,135 @@
+\documentclass[aspectratio=169,20pt]{beamer}
+\usepackage{fontspec,booktabs,tabularx}
+\geometry{paperwidth=338.67mm,paperheight=190.5mm}
+\setsansfont{TeX Gyre Heros}
+\input{shared/meta}
+\input{build/budget-values}
+\definecolor{ink}{HTML}{142D39}\definecolor{accent}{HTML}{007F78}
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamercolor{structure}{fg=accent}
+\setbeamercolor{frametitle}{fg=ink}
+\setbeamerfont{frametitle}{size=\fontsize{40}{46},series=\bfseries}
+\setbeamerfont{title}{size=\fontsize{42}{48},series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}{\color{accent}\textbullet}
+\setbeamertemplate{footline}{\hspace{5mm}\scriptsize Microfreelance / Proposal \DocVersion\hfill\insertframenumber/\inserttotalframenumber\hspace{5mm}\vspace{3mm}}
+\setbeamerfont{normal text}{size=\fontsize{30}{38}}
+\setbeamerfont{itemize/enumerate body}{size=\fontsize{30}{38}}
+\AtBeginDocument{\usebeamerfont{normal text}}
+\setbeamersize{text margin left=18mm,text margin right=18mm}
+\hypersetup{pdftitle={Microfreelance: Project Constellations},pdfauthor={newdarwindev}}
+\newcommand{\Sources}[1]{\par\vfill{\fontsize{14}{18}\selectfont\color{gray}#1\par}}
+\begin{document}
+\begin{frame}[plain]
+{\small\color{accent}NEWDARWINDEV / PRODUCT PROPOSAL}\par\vspace{7mm}
+{\fontsize{54}{62}\selectfont\bfseries Human professionals.\\AI assistants.\\One accountable project.}\par\vspace{6mm}
+{\fontsize{30}{38}\selectfont Microfreelance}\par
+{\small On-demand constellations for contractual work}\par\vspace{5mm}
+{\scriptsize \DocDate\ / v\DocVersion\ / Investor and customer edition}
+\note{A proposed platform, not a claim of an operating network. The human operator and freelancer subcontracting model is the central thesis.}
+\end{frame}
+\begin{frame}{The customer need}
+\begin{itemize}
+\item A bounded project may need several kinds of expertise.
+\item Customers still need scoping, coordination and a responsible contact.
+\item AI assistance adds capacity; acceptance still needs judgment.
+\end{itemize}
+\Sources{Context: \SourceLink. Its engineer range is \Money{120,000}--\Money{165,000}; only 16 of 551 engineer postings disclosed pay. Salary and project prices cover different work.}
+\note{The commercial source supplies context rather than proof of demand for this platform. Its arithmetic has an inconsistent midpoint; no reported all-in total is reused. The whitepaper contains the source URL and review date.}
+\end{frame}
+\begin{frame}{The project constellation}
+{\fontsize{30}{38}\selectfont One customer-facing lead, flexible specialist capacity.}\par\vspace{5mm}
+\begin{itemize}
+\item Human operators manage on-platform chatbot conversations.
+\item Freelancers subcontract bounded tasks to other freelancers.
+\item AI assistants support the team under named human supervision.
+\end{itemize}
+\note{Team composition can change per milestone. The lead remains accountable under the prime contract; subcontractors are accountable for their own accepted scope. This is the original proposed operating model.}
+\end{frame}
+\begin{frame}{Human-operated chatbots}
+\begin{itemize}
+\item Clarify the request and agree a brief.
+\item Bring in specialists when the project needs them.
+\item Review uncertain AI work and handle exceptions.
+\item Explain progress, cost and the next customer decision.
+\end{itemize}
+\note{A customer can identify the operator and request human attention. AI may draft messages and summaries; material commitments and spending changes require authorized human approval.}
+\end{frame}
+\begin{frame}{The support automation example}
+{\fontsize{30}{38}\selectfont A fictional customer asks for routine answers and human escalation.}\par\vspace{5mm}
+\begin{enumerate}
+\item Operator scopes the workflow and budget.
+\item Integration and content specialists join.
+\item AI assistants support implementation and tests.
+\item Reviewer checks evidence; customer accepts.
+\end{enumerate}
+\note{This is an illustrative scenario, not a customer case study. The deliverables include configuration, approved knowledge, escalation behavior, test evidence and operating instructions.}
+\end{frame}
+\begin{frame}{Contracts and subcontracting}
+\begin{itemize}
+\item Prime contract: customer outcome and accountable lead.
+\item Subcontracts: explicit scope, budget and delegated access.
+\item Agent assignments: named human owners and approval gates.
+\end{itemize}
+\vspace{4mm}{\fontsize{30}{38}\selectfont New scope needs agreement. Completed runs need review.}
+\note{Authorized specialists may propose further subcontracting within prime-contract rules. Changes are versioned. Customer acceptance authority does not transfer silently down the chain. Cancellation and disputes pause the affected settlement path.}
+\end{frame}
+\begin{frame}{Tenant workspaces and Tether}
+\begin{itemize}
+\item Tenant-scoped tasks, artifacts, credentials and costs.
+\item Tether-bound sessions proposed for AI supervision.
+\item Human approvals and agent events in one project record.
+\end{itemize}
+\Sources{Integration candidate: maintainer's Tether/repofleet README, reviewed 1 November 2026. Adapter compatibility and tenancy are unverified.}
+\note{The proposed model connects a task to a supervised session with correlated progress and approval events. Begin with two synthetic tenants. The full multitenant integration is not implemented by this publication.}
+\end{frame}
+\begin{frame}{Credits, payments and completion}
+\begin{itemize}
+\item Estimate and cap API usage before execution.
+\item Separate usage credits from reserved contract funds.
+\item Review artifacts, checks and revision history.
+\item Settle accepted work once; reconcile unused allowances.
+\end{itemize}
+\note{Execution success, quality review, customer acceptance and payout are separate states. Demonstrate retry, cancellation, budget exhaustion and duplicate-event handling before live billing. Provider secrets remain server-side.}
+\end{frame}
+\begin{frame}{Illustrative project budget}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}\toprule
+Human professional work & \HumanTotal\\
+API allowance & \ApiTotal\\
+Illustrative platform fee & \FeeTotal\\
+Contingency & \ContingencyTotal\\\midrule
+Maximum project envelope & \ProjectTotal\\\bottomrule
+\end{tabularx}
+\Sources{Planning assumptions, not a quote or benchmark. Fee: 10\% of human work. Separate monthly operation example: \MonthlyTotal\ before additional fees or tax.}
+\note{The shared budget source contains each role's hours and rate. Contingency is headroom, not revenue. Unused API allowance requires reconciliation. The example fee does not change the current application's fees. No savings or margin claim is made.}
+\end{frame}
+\begin{frame}{The proposed product experience}
+\begin{itemize}
+\item Prompt, brief and cost estimate.
+\item Constellation membership and contract timeline.
+\item Completion evidence and human decisions.
+\item Usage, credits and payment monitoring.
+\end{itemize}
+\Sources{UI proposal; these screens are not represented as delivered product screenshots.}
+\note{The tenant switcher, role-aware controls and mock/sandbox/live status must remain visible. Demonstrate blocked tasks and revisions alongside the successful journey. No new application API is part of the documentation release.}
+\end{frame}
+\begin{frame}{Delivery roadmap and proof points}
+\begin{enumerate}
+\item Publish the proposal and resolve product decisions.
+\item Demonstrate the workflow with two synthetic tenants.
+\item Verify Tether and a bounded live service pilot.
+\item Expand using observed delivery and repeat demand.
+\end{enumerate}
+\Sources{Existing baseline: PHP/JSON marketplace, financial workflow tests, CI and migrations; maintainer review of snapshot 65d6147, 1 November 2026.}
+\note{Measure time to accepted delivery, rework, human hours, API cost, operator response time and repeat demand. Agent count alone is not a customer outcome. No dates, funding amount or traction are asserted.}
+\end{frame}
+\begin{frame}{A focused pilot invitation}
+{\fontsize{30}{38}\selectfont Commission one clear outcome.\\Assemble the people and assistants it needs.\\Judge the accepted result.}\par\vspace{7mm}
+\begin{itemize}
+\item Customers: define a workflow and acceptance criteria.
+\item Operators: test coordination and subcontracting.
+\item Partners: verify integrations and pilot economics.
+\end{itemize}
+\note{The accompanying whitepaper contains references and explicit open decisions. The next step is a bounded mockup and then a pilot, rather than a claim that the entire network is ready.}
+\end{frame}
+\end{document}

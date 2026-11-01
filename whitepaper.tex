@@ -1,0 +1,201 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\usepackage{microtype,xcolor,booktabs,tabularx,array,fancyhdr,enumitem}
+\usepackage[colorlinks=true,urlcolor=teal,linkcolor=teal]{hyperref}
+\input{shared/meta}
+\definecolor{ink}{HTML}{142D39}
+\definecolor{accent}{HTML}{007F78}
+\hypersetup{pdftitle={Microfreelance: Human and AI Project Constellations},pdfauthor={newdarwindev},pdfsubject={Product proposal, version 0.1.0}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{8pt}
+\setlist[itemize]{leftmargin=*,itemsep=4pt,topsep=3pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{ink}MICROFREELANCE}
+\fancyhead[R]{\sffamily\small Product proposal / \DocVersion}
+\fancyfoot[L]{\sffamily\small newdarwindev / \DocDate}
+\fancyfoot[R]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newcommand{\Page}[2]{\clearpage{\sffamily\color{accent}\small #1}\par\vspace{3mm}{\sffamily\bfseries\color{ink}\LARGE #2}\par\vspace{3mm}}
+\newcommand{\Sub}[1]{\par\vspace{2mm}{\sffamily\bfseries\color{ink}#1}\par}
+\begin{document}
+\thispagestyle{empty}
+{\sffamily\small\color{accent}NEWDARWINDEV / PRODUCT WHITEPAPER}\par
+\vspace{24mm}
+{\sffamily\bfseries\color{ink}\fontsize{38}{43}\selectfont Human professionals.\\AI assistants.\\One accountable project.}\par
+\vspace{10mm}
+{\sffamily\LARGE Microfreelance}\par
+\vspace{5mm}
+{\large On-demand constellations for contractual work}\par
+\vspace{12mm}
+A customer describes an outcome. A human operator turns it into a brief, assembles the right professionals and AI assistants, and manages the work through review and acceptance. Specialists can subcontract other specialists within agreed limits as the project evolves.
+
+The proposed platform brings that collaboration into one workspace: conversation, scoped commitments, supervised agents, visible costs and evidence of completion. Customers retain a responsible point of contact while the team adapts to the work.
+\vfill
+\Sub{Executive thesis}
+The opportunity is to sell access to an accountable delivery process with flexible expertise. AI contributes drafting, analysis and execution capacity. Human professionals supply judgment, customer communication and responsibility for results.
+
+This document defines a proposed business and product model. The existing marketplace supplies an implementation starting point; the full constellation platform has not been delivered or commercially validated.
+\vspace{6mm}
+{\sffamily\small Version \DocVersion\ / \DocDate\ / Investor and customer edition}
+
+\Page{01 / CUSTOMER NEED}{Buy an outcome with a team that can change}
+A small business may need a support workflow, a reporting pipeline or a document process without having enough recurring work for every specialist involved. The initial request rarely contains a complete specification. Someone must ask questions, judge tradeoffs, connect systems and stay available after delivery.
+
+Microfreelance proposes a way to assemble that capability per project. The customer starts with a conversation. A named lead operator scopes the request and recruits specialists only when their contribution is needed. AI assistants support those professionals under explicit supervision.
+\Sub{Grounding in the supplied article}
+\SourceLink\ reports a US job-posting sample of 5,721. Its AI-engineer salary range is \Money{120,000}--\Money{165,000}, with salary information in only 16 of 551 engineer postings. Its advertised fixed-build entry price is \Money{10,000}. These are different scopes of service, not an equivalent-cost comparison. The article's displayed salary midpoint and all-in calculation also differ; this paper does not reuse that total.
+\Sub{The platform's original proposition}
+A project can combine short engagements from several professionals rather than depend on one person having every skill. The lead operator can subcontract an integration expert, a knowledge editor and a reviewer, then retain only the capacity needed for operation. This is a product hypothesis, not a conclusion established by the article.
+\Sub{When it fits}
+Use a constellation when work has identifiable deliverables, intermittent specialist needs and a customer willing to review progress. Keep an internal owner when institutional knowledge, continuous reprioritization or sensitive operational decisions demand it. A project team can complement that owner.
+
+The initial buyer is an owner or operations manager commissioning a bounded customer-support workflow. The initial supplier is a freelance operator who can manage customer conversations and coordinate a small professional team.
+
+\Page{02 / THE OPERATOR MODEL}{Human-operated chatbots as the front door}
+An on-platform chatbot is the conversational entry point to a service. A human freelance operator owns its queue, reviews uncertain answers, asks clarifying questions and makes commitments on behalf of the project only within the agreed scope. The customer should be able to identify that operator and request human attention.
+\Sub{What the operator does}
+The operator translates the customer's goal into requirements, gathers approved context, estimates effort and identifies missing expertise. During execution, the operator monitors AI activity, resolves blockers, communicates progress and asks the customer to approve changes that affect cost or deliverables.
+
+AI can draft an intake summary, propose a task breakdown and retrieve relevant project material. It should not silently negotiate a new contract, expand access or authorize additional spending. Those actions need the appropriate human authority.
+\Sub{Subcontracting between freelancers}
+The lead freelancer may offer a bounded subtask to another freelancer. That specialist can propose further subcontracting where the prime contract permits it. Each accepted subcontract records a deliverable, budget, deadline, access scope and responsible person. A chain of subcontractors must remain visible to the party authorized to approve it.
+
+Responsibility follows the contract: the lead remains accountable to the customer for the prime deliverable; each specialist remains accountable to its contracting party for its own subtask. Subcontracting does not silently transfer the customer's acceptance authority.
+\Sub{A flexible constellation}
+Membership can change between milestones. A security reviewer may join briefly, while a chatbot operator remains for continuing support. AI assistants can be added for a particular task and retired afterward. Access ends when the assignment ends; relevant deliverables and decisions remain in the project record.
+
+The intended experience combines conversation with a clear view of who is working, what each participant can do, how much has been committed and which decisions require attention.
+
+\Page{03 / WORKED CUSTOMER JOURNEY}{A support automation project}
+Consider a fictional small business that wants help answering routine support questions and passing unusual cases to a person. The scenario below illustrates the proposed service; it is not a customer case study.
+\Sub{1. Describe and scope}
+The customer asks: ``Help us answer routine support questions and route exceptions to a human.'' A freelance operator asks about approved knowledge, supported channels, escalation rules, data access and success criteria. The customer approves a brief and spending cap before execution begins.
+\Sub{2. Assemble the team}
+The operator recruits an integration specialist for the support channel and a content specialist for the knowledge base. An independent reviewer checks the agreed acceptance scenarios. AI assistants draft answer templates, suggest tests and help implement approved changes.
+\Sub{3. Execute with visible supervision}
+The team works in the customer's tenant workspace. Each task has an owner, dependencies and a budget. Tether-bound sessions are proposed as the supervision interface for AI work: progress and approval requests appear alongside human updates. A blocked integration becomes a visible decision rather than an unexplained delay.
+\Sub{4. Review and accept}
+The team submits the configuration, knowledge materials, test results and operating instructions. The reviewer checks ordinary questions, unsupported questions, escalation and access boundaries. The customer accepts the milestone or requests a revision against the agreed criteria.
+\Sub{5. Settle and operate}
+Approved completion releases the applicable reserved contract funds once. Unused API allowance is reconciled separately. The customer can commission a smaller continuing operation engagement with the chatbot operator, preserving the ability to change suppliers and export agreed deliverables.
+
+Success means the customer receives an accepted system and a named operating contact, with the execution and financial record available for inspection. A successful agent run alone does not establish that outcome.
+
+\Page{04 / CONTRACTS AND TRUST}{Flexible membership, explicit responsibility}
+The platform's contract record should make flexibility understandable. Each project begins with a snapshot of scope, deliverables, milestone budgets, deadlines, permitted AI involvement, subcontracting rules and acceptance criteria. Changes create a new agreed version rather than rewriting the original commitment.
+\Sub{Three distinct commitments}
+\begin{tabularx}{\linewidth}{@{}p{30mm}X@{}}\toprule
+Commitment & Proposed responsibility \\\midrule
+Prime contract & Customer and lead operator agree the project outcome and customer-facing obligations.\\
+Subcontract & Lead or authorized specialist commissions bounded work; access and spending stay within delegated limits.\\
+Agent assignment & A human owner delegates execution to an AI assistant; the responsible contracting party remains identifiable.\\\bottomrule
+\end{tabularx}
+\Sub{Approval boundaries}
+Customers approve the prime scope and material changes. A lead can approve subcontracts only within delegated budget and scope. Operators can review agent tool requests where authorized. Reviewers assess evidence; the named acceptance authority decides whether a milestone satisfies the contract.
+\Sub{Revisions, interruption and disputes}
+A revision request points to an unmet acceptance criterion and records whether it is in scope. New work needs a change request. Cancellation records the stopping point, completed work, artifacts and disposition of reserved funds. A disputed milestone pauses the affected settlement path until an authorized resolution is recorded.
+\Sub{Visibility without unnecessary exposure}
+Customers see the delivery team and obligations relevant to their project. Specialists see the context required for their assignments. Cross-project reuse of customer information requires explicit permission. Handover should include the agreed output, operating documentation and ownership/access arrangements, rather than relying on an operator's private chat history.
+
+These are proposed workflow rules. Commercial contract templates, service levels and jurisdiction-specific terms remain to be selected before a live contractual pilot.
+
+\Page{05 / TECHNICAL MODEL}{One tenant boundary across people and agents}
+A tenant workspace groups a customer's projects, memberships, artifacts and financial records. A person may participate in more than one workspace, but each request and assignment is evaluated in the active tenant context. Membership in one customer's team must not grant access to another customer's projects.
+\Sub{Proposed execution flow}
+\begin{center}\sffamily
+Customer prompt $\longrightarrow$ operator brief $\longrightarrow$ approved contract\\[5mm]
+Human assignments $\longleftrightarrow$ supervised AI sessions\\[5mm]
+Evidence $\longrightarrow$ review $\longrightarrow$ acceptance $\longrightarrow$ settlement
+\end{center}
+\Sub{Tether as an integration candidate}
+The reviewed Tether README describes supervision of coding-agent sessions, live output, approvals and REST/MCP access. The proposed adapter would bind a project task to a supervised session and map progress, approval and terminal events into the task record. Compatibility, authorization and failure recovery require implementation tests.
+\Sub{Minimum shared record}
+The proposed model connects tenant, project, contract, task, participant, agent session, run, approval, artifact and ledger entry. Correlation identifiers allow an operator to follow one task from prompt to output and cost. Backend authorization establishes the tenant; a client-supplied tenant identifier alone is insufficient.
+\Sub{Human and service roles}
+Tenant owners manage membership. Leads coordinate contracted work. Specialists execute bounded assignments. Reviewers inspect evidence. Service agents receive scoped capabilities. Platform administration is a separate role and should not be confused with a customer's project authority.
+
+The first product milestone should demonstrate these boundaries with two synthetic tenants and fixture-backed execution. A live Tether pilot follows after the adapter and access model have been verified. This paper does not propose exposing a shared personal agent account to multiple customers.
+
+\Page{06 / COST AND PAYMENT CONTROL}{Keep usage, contract funds and payouts distinct}
+A customer needs to understand both the project commitment and the cost of executing AI work. The platform should show a task estimate before execution and reconcile measured usage afterward. Credits are a usage entitlement; a USD contract balance is a monetary record. They should remain separately identifiable even if the product offers a conversion between them.
+\Sub{Four financial views}
+\begin{itemize}
+\item \textbf{Usage:} provider/model units, measured or estimated cost, task attribution and credit movements.
+\item \textbf{Commitments:} approved milestone amounts and reserved funds available for contracted work.
+\item \textbf{Payments:} deposits, payment status, refunds and reconciliation exceptions.
+\item \textbf{Settlement:} accepted milestones, fees and once-only contractor payouts.
+\end{itemize}
+\Sub{Spend boundaries}
+A task reserves its approved allowance, consumes measured usage and releases the unused portion. Budget exhaustion pauses further chargeable work and asks the authorized person for a decision. Retries and replayed events must not create duplicate runs, credit entries or payouts.
+
+A lead's subcontract offer cannot exceed delegated spending authority. The project view should expose remaining headroom as well as already paid costs. That makes the consequences of adding a specialist visible before the commitment is made.
+\Sub{Completion evidence}
+A completion package contains the deliverable, revision, run history, relevant test or quality results, provenance and reviewer decisions. The platform distinguishes execution success, quality review, customer acceptance and settlement. A model's claim that it finished is evidence to inspect, not a payment instruction.
+\Sub{Monitoring priorities}
+The first dashboard should surface blocked tasks, unanswered approval requests, spend approaching a cap, failed payment reconciliation and accepted work awaiting settlement. Provider invoices, usage estimates and contract records need reconciled links rather than a single unexplained balance.
+
+All credit conversion rules, provider integrations, fee schedules and live payment methods remain product decisions. The first mockup uses clearly marked simulated entries.
+
+\Page{07 / ILLUSTRATIVE ECONOMICS}{A project budget with visible assumptions}
+The example below is a hypothetical support-automation engagement. Rates, hours and allowances are planning inputs created for this proposal; they are not market benchmarks, a customer quotation or proven platform economics. Values are shared with the presentation from one source file.
+\input{build/budget-table.tex}
+\Sub{What the customer commits}
+The maximum illustrative project envelope is \ProjectTotal. It includes human work, an API allowance, an illustrative platform fee and contingency. The contingency is spending headroom rather than earned revenue. Unused allowances require reconciliation under the agreed terms.
+\Sub{Continuing operation}
+A separate monthly assumption is six operator hours at \Money{40}/hour plus \Money{80} of API allowance: \MonthlyTotal\ before any additional fee or tax. This engagement covers a defined operating scope; it does not imply unlimited human availability.
+\Sub{A hypothesis to test}
+Potential platform revenue could come from a disclosed service fee and separately contracted operation support. The example fee is a modeling assumption, not a change to the application's current fee behavior. Revenue, gross margin and supplier earnings depend on actual usage, payment costs, revisions and support effort.
+
+A pilot should measure delivery time, accepted milestone value, human hours, API consumption, rework and customer willingness to repeat. Any savings claim needs an equivalent scope and observed results. No total addressable market, investment return or forecast revenue is asserted here.
+
+\Page{08 / PRODUCT EXPERIENCE}{Make coordination and accountability visible}
+The proposed interface starts with a prompt composer and a human contact. It should help a customer understand the next decision without requiring them to understand agent infrastructure. A technical operator can inspect execution details when needed.
+\Sub{Primary screens}
+\begin{tabularx}{\linewidth}{@{}p{34mm}X@{}}\toprule
+Screen & Customer or operator question answered \\\midrule
+Prompt and brief & What do you need, what is included and what will it cost?\\
+Workspace & Which customer and project am I acting for?\\
+Constellation & Who is responsible, which specialists are assigned and what can the AI assistants do?\\
+Contract timeline & What is agreed, blocked, awaiting approval or due next?\\
+Completion suite & What was delivered, what checks passed and what needs a human decision?\\
+Usage and payments & What has been consumed, reserved, paid or left unresolved?\\\bottomrule
+\end{tabularx}
+\Sub{States that deserve first-class treatment}
+The mockup should show an empty workspace, a pending operator reply, an insufficient-credit gate, a failed run, a requested revision and an accepted milestone. It should also make mock/sandbox/live mode unmistakable. These states explain the service more convincingly than a dashboard containing only successful tasks.
+\Sub{API access}
+The UI should expose the proposed entitlement and API-key lifecycle without revealing provider secrets. A tenant-scoped API would support task intake, estimates, execution events, approvals, artifacts and usage. Its versioned contract remains implementation work; no public application API is introduced by this documentation release.
+\Sub{First demonstration}
+Use the fictional support workflow and a second synthetic tenant. Demonstrate that one tenant cannot read or charge another tenant's task. Show an operator bringing in a specialist, reviewing an AI output and requesting customer acceptance. Screenshots of a future mockup should be labeled as such; this publication does not invent product screenshots.
+
+\Page{09 / DELIVERY ROADMAP}{Prove the workflow before expanding the network}
+\Sub{Existing starting point}
+The reviewed repository is a PHP/JSON marketplace with order creation, deposits, reserved budgets, proposals, work submission, acceptance and payout behavior. It includes CI, test evidence and versioned JSON migrations. Those capabilities do not yet establish a multitenant agent platform or a commercial operator network.
+\Sub{Milestone 1: Documentation and decision alignment}
+Publish this whitepaper and deck with reproducible builds. Resolve the core product matrix: integration modes, tenant isolation, credential ownership, credits, payment rules, contractual responsibilities and acceptance. Record who owns each decision and why it was chosen.
+\Sub{Milestone 2: Reviewable mockup}
+Extend the existing UI for prompt intake, constellation membership, contract milestones, completion evidence and simulated cost monitoring. Demonstrate the complete fictional journey with deterministic fixtures and two tenants. Acceptance requires a visible human handoff and a clear distinction between execution and customer approval.
+\Sub{Milestone 3: Bounded live pilot}
+Verify the Tether adapter against the selected deployment. Add tenant-scoped access, measured usage, interruption recovery and reconciliation. Pilot one constrained service with named operators and specialists. Enable live billing only after duplicate-event and settlement behavior are tested end to end.
+\Sub{Milestone 4: Network expansion}
+Use pilot evidence to decide whether to add new professions, matching tools, deeper subcontracting and ongoing-operation offerings. Track response time, accepted delivery rate, revision frequency, repeat demand and contribution margin. Do not interpret the number of agents attached as customer value.
+\Sub{Invitation}
+Customers can help define one bounded workflow and its acceptance criteria. Operators can help validate staffing, handoffs and subcontracting needs. Investors can evaluate the proposed coordination model against the evidence required from a pilot. No funding amount, traction claim or delivery date is implied.
+
+\Page{10 / REFERENCES AND STATUS}{Evidence, assumptions and remaining decisions}
+\Sub{How to read this proposal}
+\textbf{Observed implementation} describes the repository reviewed on \DocDate. \textbf{Proposed capability} describes an intended product behavior. \textbf{Illustrative economics} uses invented, explicit planning inputs. These categories should stay separate in customer and investor discussions.
+\Sub{Open decisions before a live pilot}
+\begin{itemize}
+\item Which tenant and API credential model provides suitable isolation?
+\item Which Tether deployment and adapters can support the required supervision events?
+\item Who may approve subcontracting, spending changes and customer acceptance?
+\item How are credit units priced and reconciled against provider usage?
+\item Which payment methods, fees, cancellation terms and dispute process apply?
+\end{itemize}
+\Sub{References}
+{\small\input{shared/references}}
+\Sub{Publication record}
+Version \DocVersion, dated \DocDate. Prepared for newdarwindev as a product proposal for investors and customers. The accompanying presentation uses the same scenario, assumptions and status labels. The publication site records the build commit and provides the editable source.
+\end{document}
